@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+svg {
+  width: 200px;
+}
+
+.forca,
+.corda,
+.cabeca,
+.no,
+.corpo,
+.braco-esquerdo,
+.braco-direito,
+.perna-esquerda,
+.perna-direita {
+  display: none;
+}
+
+#word {
+  display: flex;
+  gap: 10px;
+}
+
+.letter {
+  width: 50px;
+  height: 100px;
+  border-bottom: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+}
+
+#alfabeto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+#alfabeto div {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(235, 93, 159);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#alfabeto div.palpitada,
+#alfabeto div.palpitada:hover,
+#alfabeto div.palpitada:active {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: rgb(153, 153, 152);
+}
+
+#alfabeto div:hover {
+  background-color: rgb(245, 197, 226);
+  cursor: pointer;
+}
+
+#alfabeto div:active {
+  background-color: rgb(131, 2, 51);
+}
